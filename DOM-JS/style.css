@@ -1,0 +1,247 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* border: 1px outset blue; */
+}
+
+html {
+    height: 2000px;
+}
+
+body {
+    margin-top: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+
+    background-color: orange;
+}
+
+p {
+    font-size: 50px;
+}
+
+p span {
+    display: inline-block;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+p span:hover {
+    transform: scale(1.25) translateY(-20px);
+    
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.change-bg-color-section {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.title-preview {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.bg-color-preview {
+    height: 30px;
+    width: 100px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: white;
+}
+
+.change-bg-color-section p {
+    width: fit-content;
+    font-size: 30px;
+}
+
+.input-button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.change-bg-color-section input {
+    height: 50px;
+    width: 330px;
+
+    font-size: 40px;
+}
+
+.change-bg-color-section button {
+    height: 50px;
+    width: 100px;
+    
+    border-radius: 20px;
+
+    font-size: 15px;
+}
+
+.text-to-speech-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.text-to-speech-section p {
+    width: 100%;
+    
+    margin-bottom: -8px;
+
+    font-size: 30px;
+}
+
+.text-to-speech-section textarea {
+    font-size: 30px;
+}
+
+.text-to-speech-section button {
+    height: 50px;
+    width: 150px;
+
+    border-radius: 20px;
+
+    font-size: 30px;
+}
+
+.card-section {
+    width: 350px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.top-card-title {
+    width: 100%;
+    margin-bottom: -15px;
+}
+
+.card-section-title {
+    font-size: 30px;
+}
+
+.card {
+    height: 70px;
+    width: 350px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    border-radius: 50px;
+    border: 1px outset black;
+
+    background-color: #e8e8e8e2;
+}
+
+.card img {
+    height: 70px;
+    width: 70px;
+    
+    border-radius: 50px;
+    border-right: 1px outset black;
+
+    margin-right: -20px;
+}
+
+.card-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 2px;
+}
+
+.card-description {
+    font-size: 14px;
+}
+
+.button-x {
+    margin-right: 20px;
+    font-size: 24px;
+}
+
+.button-x:hover {
+    color: red;
+    cursor: pointer;
+}
+
+.show-card {
+    height: 60px;
+    width: 180px;
+
+    border-radius: 15px;
+
+    font-size: 18px;
+}
+
+.hover-bg-red:hover {
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+
+    transform: scale(1.1);
+    transition-duration: 0.5s;
+}
+
+.gallery-section p {
+    margin-bottom: 5px;
+    font-size: 30px;
+}
+
+.gallery {
+    width: 600px;
+    line-height: 0;
+
+    background-color: white;
+    border: 5px solid white;
+}
+
+.main-image {
+    width: 100%;
+}
+
+.thumbnail {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.thumbnail-image {
+    width: 200px;
+    border: 2px solid white;
+    box-sizing: border-box;
+}
+
+.thumbnail-image:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.fade-in-animation {
+    opacity: 0;
+    animation: fadeIn 0.5s forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+.selected-image {
+    opacity: 0.5;
+}
