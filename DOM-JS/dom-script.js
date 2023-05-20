@@ -107,7 +107,7 @@ textInput.setAttribute('placeholder', 'Hello, my name is Henry');
 // });
 
 const list = ['HTML', 'CSS', 'JavaScript'];
-const cards = document.querySelectorAll('.card');
+const cards = document.querySelectorAll('.card-item');
 
 cards.forEach((card, i) => {
     card.setAttribute('name', list[i]);

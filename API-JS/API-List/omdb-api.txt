@@ -7,7 +7,7 @@ API_KEY = 7995cd8
 API_URL_FORMAT = http://www.omdbapi.com/?apikey=[yourkey]&[param]
 
 PARAM s = brief data
-PARAM t = complete data
+PARAM i = complete data
 
 EXAMPLE:
 s = http://www.omdbapi.com/?apikey=7995cd8&s=harry potter

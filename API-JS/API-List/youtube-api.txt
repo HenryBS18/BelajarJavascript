@@ -1,0 +1,61 @@
+| -- YOUTUBE API -- |
+
+API_URL = https://www.googleapis.com/youtube/v3/channels
+
+API_KEY = AIzaSyCXAUyAgzj-SMvoFyxI6uYHsxNIwC-DUiU
+
+PARAM part = snippet, statistics
+PARAM id = channel id
+
+EXAMPLE:
+https://www.googleapis.com/youtube/v3/channels?part=statistics, snippet&id=UC-lHJZR3Gqxm24_Vd_AJ5Yw&key=AIzaSyCXAUyAgzj-SMvoFyxI6uYHsxNIwC-DUiU
+
+{
+    "kind": "youtube#channelListResponse",
+    "etag": "28oCqTohdDYOUoMSgvnMBy0rPGI",
+    "pageInfo": {
+        "totalResults": 1,
+        "resultsPerPage": 5
+    },
+    "items": [
+        {
+            "kind": "youtube#channel",
+            "etag": "_QEJUEJpTUC3ekoC7DYYn9X02Zs",
+            "id": "UC-lHJZR3Gqxm24_Vd_AJ5Yw",
+            "snippet": {
+                "title": "PewDiePie",
+                "description": "I make videos.",
+                "customUrl": "@pewdiepie",
+                "publishedAt": "2010-04-29T10:54:00Z",
+                "thumbnails": {
+                    "default": {
+                        "url": "https://yt3.ggpht.com/5oUY3tashyxfqsjO5SGhjT4dus8FkN9CsAHwXWISFrdPYii1FudD4ICtLfuCw6-THJsJbgoY=s88-c-k-c0x00ffffff-no-rj",
+                        "width": 88,
+                        "height": 88
+                    },
+                    "medium": {
+                        "url": "https://yt3.ggpht.com/5oUY3tashyxfqsjO5SGhjT4dus8FkN9CsAHwXWISFrdPYii1FudD4ICtLfuCw6-THJsJbgoY=s240-c-k-c0x00ffffff-no-rj",
+                        "width": 240,
+                        "height": 240
+                    },
+                    "high": {
+                        "url": "https://yt3.ggpht.com/5oUY3tashyxfqsjO5SGhjT4dus8FkN9CsAHwXWISFrdPYii1FudD4ICtLfuCw6-THJsJbgoY=s800-c-k-c0x00ffffff-no-rj",
+                        "width": 800,
+                        "height": 800
+                    }
+                },
+                "localized": {
+                    "title": "PewDiePie",
+                    "description": "I make videos."
+                },
+                "country": "JP"
+            },
+            "statistics": {
+                "viewCount": "28980435906",
+                "subscriberCount": "111000000",
+                "hiddenSubscriberCount": false,
+                "videoCount": "4709"
+            }
+        }
+    ]
+}
